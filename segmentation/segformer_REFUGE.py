@@ -329,7 +329,7 @@ if __name__ == '__main__':
                             accuracy = metrics['mean_accuracy']
                             torch.save(model.state_dict(), 'best_segformer_balance.pt')
         
-    model.load_state_dict(torch.load('/data6/shuoli/REFUGE/segformer/best_segformer_balance.pt'))
+    model.load_state_dict(torch.load('../segformer/best_segformer_balance.pt'))
     model.eval()
 
     cases_dir = []
