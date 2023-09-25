@@ -23,9 +23,7 @@ from torch import nn
 import numpy as np
 import matplotlib.pyplot as plt
 import random
-import utils
 import pandas as pd
-import sklearn
 
 class REFUGESegDataset_semantic(Dataset):
     def __init__(self, imagePaths, maskPaths, transforms, feature_extractor, WIDTH=224, HEIGHT=224, annotation=None, nottrain=False):
